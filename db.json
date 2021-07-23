@@ -1,53 +1,63 @@
 {
   "students": [
     {
-      "stuname": "Fian Ilham Paratama aja",
-      "email": "Fian123@gmail.com",
+      "stuname": "Fian Ilham Paratama",
+      "email": "Fianisty2100@gmail.com",
+      "image": "https://i0.wp.com/teknokuys.com/wp-content/uploads/2020/12/1-11-300x300.jpg",
       "id": 1
     },
     {
       "stuname": "Alfaizuna Aulia",
-      "email": "Alfaimpostor@yahoo.com",
+      "email": "im.post.or2234@gmail.com",
+      "image": "https://i0.wp.com/teknokuys.com/wp-content/uploads/2020/12/1-4-300x300.jpg",
       "id": 2
     },
     {
       "stuname": "Jansen Stanlie",
-      "email": "Jhonson0231@yahoo.id",
+      "email": "@gmail.com",
+      "image": "https://i0.wp.com/teknokuys.com/wp-content/uploads/2020/12/1-3-300x300.jpg",
       "id": 3
     },
     {
       "stuname": "Harry",
-      "email": "HarryAjaBos@gmail.com",
+      "email": "@gmail.com",
+      "image": "https://i0.wp.com/teknokuys.com/wp-content/uploads/2020/12/1-9-300x300.jpg",
       "id": 4
     },
     {
       "stuname": "Eko Cahyanto",
-      "email": "YantoWeb@gmail.co.id",
+      "email": "@gmail.com",
+      "image": "https://i0.wp.com/teknokuys.com/wp-content/uploads/2020/12/1-2-300x300.jpg",
       "id": 5
     },
     {
       "stuname": "Muhammad Adzka Anshory",
-      "email": "AdzkaAnshorrr@gmail.com",
+      "email": "@gmail.com",
+      "image": "https://i0.wp.com/teknokuys.com/wp-content/uploads/2020/12/1-5-300x300.jpg",
       "id": 6
     },
     {
       "stuname": "Firdho Pratama",
-      "email": "PratamaFird@yahoo.com",
+      "email": "@gmail.com",
+      "image": "https://i0.wp.com/teknokuys.com/wp-content/uploads/2020/12/1-12-300x300.jpg",
       "id": 7
     },
     {
       "stuname": "Sefrinaldi",
-      "email": "Sefffffffffrimambo@gmail.com",
+      "email": "@gmail.com",
+      "image": "https://i0.wp.com/teknokuys.com/wp-content/uploads/2020/12/1-5-300x300.jpg",
       "id": 8
     },
     {
       "stuname": "Dimas Rosadi",
-      "email": "DmsRosad2122@gmail.com",
+      "email": "@gmail.com",
+      "image": "https://i0.wp.com/teknokuys.com/wp-content/uploads/2020/12/1-1-300x300.jpg",
       "id": 9
     },
     {
+      "email": "@gmail.com",
       "stuname": "Muhamad Nur Ridwan",
-      "email": "Nurridwan@gmail.com",
+      "image": "https://i0.wp.com/teknokuys.com/wp-content/uploads/2020/12/1-13-300x300.jpg",
       "id": 10
     }
   ]

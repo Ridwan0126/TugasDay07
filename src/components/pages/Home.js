@@ -26,6 +26,7 @@ const Home = () => {
   const [student, setStudent] = useState({
     stuname: "",
     email: "",
+    image: "",
   });
   const [status, setStatus] = useState();
 

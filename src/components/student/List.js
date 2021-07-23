@@ -59,9 +59,9 @@ const List = () => {
 
   return (
     <>
-      <Box textAlign="center" p={2} className={classes.stuListColor}>
-        <Typography variant="h4">List Data</Typography>
-      </Box>
+      {/* <Box textAlign="center" p={2} className={classes.stuListColor}> */}
+      {/* <Typography variant="h4">List Data</Typography> */}
+      {/* </Box> */}
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -76,6 +76,9 @@ const List = () => {
                 Email
               </TableCell>
               <TableCell align="center" className={classes.tableHeadCell}>
+                Image
+              </TableCell>
+              <TableCell align="center" className={classes.tableHeadCell}>
                 Action
               </TableCell>
             </TableRow>
@@ -87,6 +90,7 @@ const List = () => {
                   <TableCell align="center">{i + 1}</TableCell>
                   <TableCell align="center">{student.stuname}</TableCell>
                   <TableCell align="center">{student.email}</TableCell>
+                  {/* <TableCell align="center">{student.image}</TableCell> */}
                   <TableCell align="center">
                     <Tooltip title="View">
                       <IconButton>

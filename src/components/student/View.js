@@ -65,6 +65,9 @@ const View = () => {
               <TableCell align="center" className={classes.tableHeadCell}>
                 Email
               </TableCell>
+              <TableCell align="center" className={classes.tableHeadCell}>
+                image
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -72,6 +75,9 @@ const View = () => {
               <TableCell align="center">{student.id}</TableCell>
               <TableCell align="center">{student.stuname}</TableCell>
               <TableCell align="center">{student.email}</TableCell>
+              <TableCell align="center">
+                <img src={student.image} />
+              </TableCell>
             </TableRow>
           </TableBody>
         </Table>
