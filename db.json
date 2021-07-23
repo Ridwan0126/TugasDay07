@@ -1,0 +1,54 @@
+{
+  "students": [
+    {
+      "stuname": "Fian Ilham Paratama aja",
+      "email": "Fian123@gmail.com",
+      "id": 1
+    },
+    {
+      "stuname": "Alfaizuna Aulia",
+      "email": "Alfaimpostor@yahoo.com",
+      "id": 2
+    },
+    {
+      "stuname": "Jansen Stanlie",
+      "email": "Jhonson0231@yahoo.id",
+      "id": 3
+    },
+    {
+      "stuname": "Harry",
+      "email": "HarryAjaBos@gmail.com",
+      "id": 4
+    },
+    {
+      "stuname": "Eko Cahyanto",
+      "email": "YantoWeb@gmail.co.id",
+      "id": 5
+    },
+    {
+      "stuname": "Muhammad Adzka Anshory",
+      "email": "AdzkaAnshorrr@gmail.com",
+      "id": 6
+    },
+    {
+      "stuname": "Firdho Pratama",
+      "email": "PratamaFird@yahoo.com",
+      "id": 7
+    },
+    {
+      "stuname": "Sefrinaldi",
+      "email": "Sefffffffffrimambo@gmail.com",
+      "id": 8
+    },
+    {
+      "stuname": "Dimas Rosadi",
+      "email": "DmsRosad2122@gmail.com",
+      "id": 9
+    },
+    {
+      "stuname": "Muhamad Nur Ridwan",
+      "email": "Nurridwan@gmail.com",
+      "id": 10
+    }
+  ]
+}
