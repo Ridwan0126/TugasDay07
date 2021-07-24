@@ -75,9 +75,9 @@ const List = () => {
               <TableCell align="center" className={classes.tableHeadCell}>
                 Email
               </TableCell>
-              <TableCell align="center" className={classes.tableHeadCell}>
+              {/* <TableCell align="center" className={classes.tableHeadCell}>
                 Image
-              </TableCell>
+              </TableCell> */}
               <TableCell align="center" className={classes.tableHeadCell}>
                 Action
               </TableCell>

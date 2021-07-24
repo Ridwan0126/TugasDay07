@@ -55,12 +55,12 @@ const Home = () => {
         <Typography variant="h2">BOOTCAMP G2 Academy</Typography>
       </Box>
       <Grid container justify="center" spacing={4}>
-        <Grid item md={6} xs={12}>
+        {/* <Grid item md={6} xs={12}>
           <Box textAlign="center" p={2} className={classes.addStuColor} mb={2}>
             <Typography variant="h4">Tambah Data</Typography>
-          </Box>
-          <form noValidate>
-            <Grid container spacing={2}>
+          </Box> */}
+        {/* <form noValidate> */}
+        {/* <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField
                   autoComplete="stuname"
@@ -96,11 +96,49 @@ const Home = () => {
               >
                 Add
               </Button>
-            </Box>
-          </form>
-        </Grid>
+            </Box> */}
+        {/* </form> */}
+        {/* </Grid> */}
 
         <Grid item md={6} xs={12}>
+          <Box textAlign="center" p={2} className={classes.addStuColor} mb={2}>
+            <Typography variant="h4">Tambah Data</Typography>
+          </Box>
+          <Grid item xs={12}>
+            <TextField
+              autoComplete="stuname"
+              name="stuname"
+              variant="outlined"
+              required
+              fullWidth
+              id="stuname"
+              label="Name"
+              onChange={(e) => onTextFieldChange(e)}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              autoComplete="email"
+              name="email"
+              variant="outlined"
+              required
+              fullWidth
+              id="email"
+              label="Email Address"
+              onChange={(e) => onTextFieldChange(e)}
+            />
+          </Grid>
+          <Box m={3}>
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              fullWidth
+              onClick={(e) => onFormSubmit(e)}
+            >
+              Add
+            </Button>
+          </Box>
           <List />
         </Grid>
       </Grid>
