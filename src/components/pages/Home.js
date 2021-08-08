@@ -23,16 +23,21 @@ const useStyles = makeStyles({
 
 const Home = () => {
   const classes = useStyles();
-  const [student, setStudent] = useState({
-    stuname: "",
-    email: "",
-    image: "",
+  const [users, setStudent] = useState({
+    name: "",
+    username: "",
+    // // stuname: "",
+    // title: "",
+    // url: "",
+    // thumbnailUrl: "",
+    // // email: "",
+    // image: "",
   });
   const [status, setStatus] = useState();
 
   function onTextFieldChange(e) {
     setStudent({
-      ...student,
+      ...users,
       [e.target.name]: e.target.value,
     });
   }
@@ -40,7 +45,7 @@ const Home = () => {
   async function onFormSubmit(e) {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:3333/students`, student);
+      await axios.post(`https://jsonplaceholder.typicode.com/users`, users);
       setStatus(true);
     } catch (error) {
       console.log("Something is Wrong");
@@ -106,24 +111,24 @@ const Home = () => {
           </Box>
           <Grid item xs={12}>
             <TextField
-              autoComplete="stuname"
-              name="stuname"
+              autoComplete="name"
+              name="name"
               variant="outlined"
               required
               fullWidth
-              id="stuname"
+              id="name"
               label="Name"
               onChange={(e) => onTextFieldChange(e)}
             />
           </Grid>
           <Grid item xs={12}>
             <TextField
-              autoComplete="email"
-              name="email"
+              autoComplete="username"
+              name="username"
               variant="outlined"
               required
               fullWidth
-              id="email"
+              id="username"
               label="Email Address"
               onChange={(e) => onTextFieldChange(e)}
             />

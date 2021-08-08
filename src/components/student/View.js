@@ -34,7 +34,10 @@ const View = () => {
   useEffect(() => {
     async function getStudent() {
       try {
-        const student = await axios.get(`http://localhost:3333/students/${id}`);
+        // const student = await axios.get(`http://localhost:3333/students/${id}`);
+        const student = await axios.get(
+          `https://jsonplaceholder.typicode.com/users/${id}`
+        );
         console.log(student.data);
         setStudent(student.data);
       } catch (error) {
@@ -63,20 +66,23 @@ const View = () => {
                 Name
               </TableCell>
               <TableCell align="center" className={classes.tableHeadCell}>
-                Email
+                Usrname
               </TableCell>
               <TableCell align="center" className={classes.tableHeadCell}>
-                image
+                Email
               </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             <TableRow>
               <TableCell align="center">{student.id}</TableCell>
-              <TableCell align="center">{student.stuname}</TableCell>
-              <TableCell align="center">{student.email}</TableCell>
+              {/* <TableCell align="center">{student.stuname}</TableCell> */}
+              <TableCell align="center">{student.name}</TableCell>
+              {/* <TableCell align="center">{student.email}</TableCell> */}
+              <TableCell align="center">{student.username}</TableCell>
               <TableCell align="center">
-                <img src={student.image} />
+                {student.email}
+                {/* <img src={student.thumbnail} /> */}
               </TableCell>
             </TableRow>
           </TableBody>

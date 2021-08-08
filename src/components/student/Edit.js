@@ -26,13 +26,17 @@ const Edit = () => {
   const { id } = useParams();
   const history = useHistory();
   const [student, setStudent] = useState({
-    stuname: "",
+    // stuname: "",
+    name: "",
     email: "",
   });
   useEffect(() => {
     async function getStudent() {
       try {
-        const student = await axios.get(`http://localhost:3333/students/${id}`);
+        // const student = await axios.get(`http://localhost:3333/students/${id}`);
+        const student = await axios.get(
+          `https://jsonplaceholder.typicode.com/users/${id}`
+        );
         console.log(student.data);
         setStudent(student.data);
       } catch (error) {
@@ -52,7 +56,10 @@ const Edit = () => {
   async function onFormSubmit(e) {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:3333/students/${id}`, student);
+      await axios.put(
+        `https://jsonplaceholder.typicode.com/users/${id}`,
+        student
+      );
       history.push("/");
     } catch (error) {
       console.log("Something is Wrong");
@@ -97,7 +104,7 @@ const Edit = () => {
                   fullWidth
                   id="stuname"
                   label="Name"
-                  value={student.stuname}
+                  value={student.name}
                   onChange={(e) => onTextFieldChange(e)}
                 />
               </Grid>
